@@ -5,6 +5,7 @@
 function makeGrid() {
     const height = $('#inputHeight').val();
     const width = $('#inputWeight').val();
+    var colorPicker = $("#colorPicker").val();
 
     $('#pixelCanvas').children().remove();
 
@@ -21,7 +22,6 @@ function makeGrid() {
     // $('#pixelCanvas')
     $('tr').css("background-color", colorPicker);
 }
-var colorPicker = $("#colorPicker").val();
 // $('#sizePicker').on('click',makeGrid());
 var submit;
 submit = $('input[type="submit"]');
